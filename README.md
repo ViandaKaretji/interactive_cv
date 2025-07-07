@@ -1,2 +1,2 @@
 # interactive_cv
-Website portofolio pribad
+Website portofolio pribadi
