@@ -1,15 +1,12 @@
 <script setup>
-import SectionTitle from "./SectionTitle.vue";
-const skills = [
-  { name: "Vue.js", level: "Menengah" },
-  { name: "JavaScript", level: "Menengah" },
-  { name: "Tailwind CSS", level: "Menengah" },
-  { name: "Node.js", level: "Menengah" },
-  { name: "Express.js", level: "Menengah" },
-  { name: "MySQL", level: "Mahir" },
-  { name: "Git & GitHub", level: "Mahir" },
-  { name: "HTML5 & CSS3", level: "Mahir" },
-];
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import SectionTitle from './SectionTitle.vue';
+const skills = ref([]);
+onMounted(async () => {
+try { const response = await axios.get('http://localhost:3000/api/skills'); skills.value = response.data;
+} catch (error) { console.error(error); }
+});
 </script>
 <template>
   <section id="skill" class="py-20 bg-gray-50">
