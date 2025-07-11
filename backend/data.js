@@ -7,12 +7,12 @@ const skills = [
     { name: "Tailwind CSS", level: "Menengah" },
     { name: "Node.js", level: "Menengah" },
     { name: "Express.js", level: "Menengah" },
-    { name: "MySQL", level: "Mahir" },
-    { name: "Git & GitHub", level: "Mahir" },
-    { name: "HTML5 & CSS3", level: "Mahir" }, 
+    { name: "MySQL", level: "Menengah" },
+    { name: "Git & GitHub", level: "Menengah" },
+    { name: "HTML5 & CSS3", level: "Menengah" }, 
 ];
 const projects = [ 
-    { title: "Website Toko Online", image: "https://via.placeholder.com/500x300?text=Proyek+1", description: "Platform e-commerce dengan fitur keranjang belanja.", tech: ["Vue.js", "Express.js", "PostgreSQL"], link: "#" },
-    { title: "Aplikasi Manajemen Tugas", image: "https://via.placeholder.com/500x300?text=Proyek+2", description: "Aplikasi untuk melacak progres tugas harian.", tech: ["React", "Firebase"], link: "#" },
+    { title: "Sistem Carwash", image: '/images/PL.png', description: "Platform menghitung pendapatan Carwash", tech: ["C#"], link: "#" },
+    { title: "Technologia", image: "/images/Technologia.png", description: "Web Rekomendasi Laptop", tech: ["Vue", "CI3"], link: "https://github.com/ddaannuu/Project-Website-Laptop" },
  ];
 module.exports = { educationHistory, skills, projects };
